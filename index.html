@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc65764bd8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><img class="logo" src="images/MyLogo.jpeg"></a>
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm Robbie Paud</h1>
+            </div>
+        </div>
+    </div>
+    <!----------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/picOfMe.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a recent college graduate eagerly looking to apply my skills towards a career in computer programming 
+                        while also continuing to expand my knowledge daily in the computer science field. I have 4+ years experience 
+                        in programming languages such as Kotlin, C, C++, Python, SQL, React, Java, JavaScript, Go and HTML as well as 4+ years 
+                        experience with IDEs & technologies like VSCode, Android Studio, Oracle, MySQL, Ubuntu, Git.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>December 2022</span>
+                                <br>Bachelor's Of Science @ Cal. State University - San Marcos</li>
+                            <li><span>February 2024 - April 2024</span>
+                                <br>Revature Software Development Training Program</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>April 2024 - Present</span>
+                                <br>IT Specialist @ South Coast Air Quality Managment District</li>
+                            <li><span>September 2019 - April 2024</span>
+                                <br>Shift Lead @ Karl Strauss Brewing Company</li>
+                            <li><span>June 2019 - Oct. 2019 & June 2020 - Nov. 2020</span>
+                                <br>IT Specilaist (Intern) @ 
+                                South Coast Air Quality Management District</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Database Management</span>
+                                <br>- Planning, developing, and maintaining databases using SQL queries.</li>
+                            <li><span>Application Development</span>
+                                <br>- Front-end & back-end
+                                <br>- Kotlin, XML, JavaScript, Python</li>
+                            <li><span>Information Technology</span>
+                                <br>- Complete time sensitive help desk tickets, bug fixes, help on QA efforts.<br>
+                                - Answer Help Desk support line.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>Oracle SQL Developer & MySQL</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>App / Web Development</h2>
+                    <p>VSCode, Android Studio, GitHub, Firebase, Flutter, Jira</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Information Technology</h2>
+                    <p>Microsoft Office, Cisco Jabber, Active Directory, HelpDesk, OnBase, Zoom</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------portfolio------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/AppProject.jpg">
+                    <div class="layer">
+                        <h3>Workflow Manager App</h3>
+                        <p>This app allows users to input tasks that are displayed through a Gantt chart. The tasks are then stored 
+                            into Cloud Firestore and can be retrieved or deleted. The app integrates Google Calendar API for 
+                            organizing tasks by date.
+                        </p>
+                        <a href="https://github.com/cs481csusm/finalproject-final-team-1.git" target=”_blank”><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/sql.jpeg">
+                    <div class="layer">
+                        <h3>Social Media Blog API</h3>
+                        <p>API backend without a frontend. This app can manage user accounts and messages 
+                            that they submit to the app. Users are able to see all of the messages posted to the site 
+                            as well as the messages posted by a particular user. This backend can process actions like logins, 
+                            registrations, message creations, message updates, and message deletions.
+                        </p>
+                        <a href="https://github.com/robpaud/robpaud-pep-project.git" target=”_blank”><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/libraryEdited.jpg">
+                    <div class="layer">
+                        <h3>Library Manager</h3>
+                        <p>This library manager implements Javalin API. The app creates author and 
+                            book tables using SQL statements. It has the ability to retrieve & insert 
+                            new authors or books as well as update and delete authors, books, and publishing dates.
+                        </p>
+                        <a href="https://github.com/robpaud/robpaud-Library.git" target=”_blank”><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/robpaud" target="_blank" class="btn">See More</a>
+    </div>
+    <!-----------------contact------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>Robbie.Paud@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>(951)-813-0216</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/robert-paud" target=”_blank” ><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/robpaud" target=”_blank” ><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Resume Updated.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Robbie Paud. Made with <i class="fa-solid fa-heart"></i> in 2024.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxL3Hn5riLhhXa-Z8PRYf_INquWTbjnDhnfxfwZ4uei-Y4XBlH-ea59XiK13ivXmQk0/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error Occured!', error.message))
+    })
+  </script>
+</body>
+</html>
